@@ -12,15 +12,18 @@ struct Article: Codable {
 }
 
 struct ArticleView: View {
+    @ObservedObject var viewModel = ArticleViewModel()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            List {
+                ForEach(0..<viewModel.articles.count, id: \.self) { index in
+                    Text(viewModel.articles[index].title)
+                }
+            }
         }
-        .padding()
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {

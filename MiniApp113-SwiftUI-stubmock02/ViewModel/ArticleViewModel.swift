@@ -8,14 +8,18 @@
 import Foundation
 
 class ArticleViewModel: ObservableObject {
-    @Published var article: [Article] = [Article]()
+    @Published var articles: [Article] = [Article]()
     private let articleListAPIClient = ArticleListAPIClient()
+
+    init() {
+        loadArticles()
+    }
 
     func loadArticles() {
         articleListAPIClient.fetch(completion: { [weak self] resulte in
             switch resulte {
             case .success(let articleList):
-                self?.article = articleList
+                self?.articles = articleList
             case .failure(let error):
                 print(error)
             }
