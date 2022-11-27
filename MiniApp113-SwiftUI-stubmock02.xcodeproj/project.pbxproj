@@ -15,6 +15,9 @@
 		878F480A29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F480929341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITests.swift */; };
 		878F480C29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F480B29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITestsLaunchTests.swift */; };
 		878F481C29341CE000269F84 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F481B29341CE000269F84 /* APIError.swift */; };
+		878F481E29341DE300269F84 /* ArticleListAPIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F481D29341DE300269F84 /* ArticleListAPIClientProtocol.swift */; };
+		878F481F29341DE300269F84 /* ArticleListAPIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F481D29341DE300269F84 /* ArticleListAPIClientProtocol.swift */; };
+		878F482029341DE300269F84 /* ArticleListAPIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F481D29341DE300269F84 /* ArticleListAPIClientProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,7 @@
 		878F480929341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniApp113_SwiftUI_stubmock02UITests.swift; sourceTree = "<group>"; };
 		878F480B29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniApp113_SwiftUI_stubmock02UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		878F481B29341CE000269F84 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		878F481D29341DE300269F84 /* ArticleListAPIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListAPIClientProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				878F481B29341CE000269F84 /* APIError.swift */,
+				878F481D29341DE300269F84 /* ArticleListAPIClientProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878F481E29341DE300269F84 /* ArticleListAPIClientProtocol.swift in Sources */,
 				878F47F129341AE800269F84 /* ArticleView.swift in Sources */,
 				878F47EF29341AE800269F84 /* MiniApp113_SwiftUI_stubmock02App.swift in Sources */,
 				878F481C29341CE000269F84 /* APIError.swift in Sources */,
@@ -294,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878F481F29341DE300269F84 /* ArticleListAPIClientProtocol.swift in Sources */,
 				878F480029341AE900269F84 /* MiniApp113_SwiftUI_stubmock02Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878F482029341DE300269F84 /* ArticleListAPIClientProtocol.swift in Sources */,
 				878F480A29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITests.swift in Sources */,
 				878F480C29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITestsLaunchTests.swift in Sources */,
 			);

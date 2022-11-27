@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+struct Article: Codable {
+    let title: String
+}
+
 struct ArticleView: View {
     var body: some View {
         VStack {
