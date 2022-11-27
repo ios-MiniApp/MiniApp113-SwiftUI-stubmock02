@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		878F47EF29341AE800269F84 /* MiniApp113_SwiftUI_stubmock02App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F47EE29341AE800269F84 /* MiniApp113_SwiftUI_stubmock02App.swift */; };
-		878F47F129341AE800269F84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F47F029341AE800269F84 /* ContentView.swift */; };
+		878F47F129341AE800269F84 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F47F029341AE800269F84 /* ArticleView.swift */; };
 		878F47F329341AE900269F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878F47F229341AE900269F84 /* Assets.xcassets */; };
 		878F47F629341AE900269F84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878F47F529341AE900269F84 /* Preview Assets.xcassets */; };
 		878F480029341AE900269F84 /* MiniApp113_SwiftUI_stubmock02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F47FF29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02Tests.swift */; };
 		878F480A29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F480929341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITests.swift */; };
 		878F480C29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F480B29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITestsLaunchTests.swift */; };
+		878F481C29341CE000269F84 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F481B29341CE000269F84 /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		878F47EB29341AE800269F84 /* MiniApp113-SwiftUI-stubmock02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniApp113-SwiftUI-stubmock02.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		878F47EE29341AE800269F84 /* MiniApp113_SwiftUI_stubmock02App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniApp113_SwiftUI_stubmock02App.swift; sourceTree = "<group>"; };
-		878F47F029341AE800269F84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		878F47F029341AE800269F84 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		878F47F229341AE900269F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		878F47F529341AE900269F84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		878F47FB29341AE900269F84 /* MiniApp113-SwiftUI-stubmock02Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MiniApp113-SwiftUI-stubmock02Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		878F480529341AE900269F84 /* MiniApp113-SwiftUI-stubmock02UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MiniApp113-SwiftUI-stubmock02UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		878F480929341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniApp113_SwiftUI_stubmock02UITests.swift; sourceTree = "<group>"; };
 		878F480B29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniApp113_SwiftUI_stubmock02UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		878F481B29341CE000269F84 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,10 @@
 		878F47ED29341AE800269F84 /* MiniApp113-SwiftUI-stubmock02 */ = {
 			isa = PBXGroup;
 			children = (
+				878F481A29341C2300269F84 /* Model */,
+				878F481929341C1D00269F84 /* View */,
+				878F481829341C1300269F84 /* ViewModel */,
 				878F47EE29341AE800269F84 /* MiniApp113_SwiftUI_stubmock02App.swift */,
-				878F47F029341AE800269F84 /* ContentView.swift */,
 				878F47F229341AE900269F84 /* Assets.xcassets */,
 				878F47F429341AE900269F84 /* Preview Content */,
 			);
@@ -125,6 +129,29 @@
 				878F480B29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITestsLaunchTests.swift */,
 			);
 			path = "MiniApp113-SwiftUI-stubmock02UITests";
+			sourceTree = "<group>";
+		};
+		878F481829341C1300269F84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		878F481929341C1D00269F84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				878F47F029341AE800269F84 /* ArticleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		878F481A29341C2300269F84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				878F481B29341CE000269F84 /* APIError.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878F47F129341AE800269F84 /* ContentView.swift in Sources */,
+				878F47F129341AE800269F84 /* ArticleView.swift in Sources */,
 				878F47EF29341AE800269F84 /* MiniApp113_SwiftUI_stubmock02App.swift in Sources */,
+				878F481C29341CE000269F84 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

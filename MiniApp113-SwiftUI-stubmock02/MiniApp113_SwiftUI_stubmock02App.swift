@@ -11,7 +11,7 @@ import SwiftUI
 struct MiniApp113_SwiftUI_stubmock02App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ArticleView()
         }
     }
 }
