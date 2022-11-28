@@ -5,8 +5,6 @@
 //  Created by 前田航汰 on 2022/11/28.
 //
 
-import Foundation
-
 class MockArticlesAPIClient: ArticleListAPIClientProtocol {
 
     var returnArticles: [Article]?
@@ -33,8 +31,6 @@ class MockArticlesAPIClient: ArticleListAPIClientProtocol {
         Article(title: "記事18"),
         Article(title: "記事19"),
     ]
-
-
 
     func fetch(completion: @escaping ((Result<[Article], APIError>) -> Void)) {
         completion(fetchResult)

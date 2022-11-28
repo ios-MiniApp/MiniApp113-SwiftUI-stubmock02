@@ -29,7 +29,9 @@ final class MiniApp113_SwiftUI_stubmock02Tests: XCTestCase {
         articleViewModel = ArticleViewModel(fetchArticlesAPIClient: mockArticlesAPIClient)
         XCTAssertEqual(articleViewModel.apiError, APIError.networkError)
     }
-
+/*
+ 外部APIなど通信を行って値を取得する場合、時間やタイミングによってレスポンスの値が変化することも多いと思います。そのような状態でXCTAssertEqualでテストを実装すれば、あるときは成功したり失敗したり、不安定なテストになるかと思います。
+ */
     func test_値が空だとnoneValueを返す() {
         mockArticlesAPIClient.fetchResult = .failure(APIError.noneValue)
         articleViewModel = ArticleViewModel(fetchArticlesAPIClient: mockArticlesAPIClient)

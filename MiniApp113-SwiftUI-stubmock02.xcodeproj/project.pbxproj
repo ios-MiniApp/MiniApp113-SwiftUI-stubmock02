@@ -24,9 +24,9 @@
 		878F482629341FEF00269F84 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F482529341FEF00269F84 /* ArticleViewModel.swift */; };
 		878F482729341FEF00269F84 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F482529341FEF00269F84 /* ArticleViewModel.swift */; };
 		878F482829341FEF00269F84 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F482529341FEF00269F84 /* ArticleViewModel.swift */; };
-		878F482A2934284B00269F84 /* MockArticleFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F48292934284B00269F84 /* MockArticleFetcher.swift */; };
-		878F482B2934284B00269F84 /* MockArticleFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F48292934284B00269F84 /* MockArticleFetcher.swift */; };
-		878F482C2934284B00269F84 /* MockArticleFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F48292934284B00269F84 /* MockArticleFetcher.swift */; };
+		878F482A2934284B00269F84 /* MockArticlesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F48292934284B00269F84 /* MockArticlesAPIClient.swift */; };
+		878F482B2934284B00269F84 /* MockArticlesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F48292934284B00269F84 /* MockArticlesAPIClient.swift */; };
+		878F482C2934284B00269F84 /* MockArticlesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F48292934284B00269F84 /* MockArticlesAPIClient.swift */; };
 		878F482D29342F6300269F84 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F47F029341AE800269F84 /* ArticleView.swift */; };
 		878F482E29342F6400269F84 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F47F029341AE800269F84 /* ArticleView.swift */; };
 		878F482F29342F7100269F84 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878F481B29341CE000269F84 /* APIError.swift */; };
@@ -65,7 +65,7 @@
 		878F481D29341DE300269F84 /* ArticleListAPIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListAPIClientProtocol.swift; sourceTree = "<group>"; };
 		878F482129341E9600269F84 /* ArticleListAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListAPIClient.swift; sourceTree = "<group>"; };
 		878F482529341FEF00269F84 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
-		878F48292934284B00269F84 /* MockArticleFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticleFetcher.swift; sourceTree = "<group>"; };
+		878F48292934284B00269F84 /* MockArticlesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticlesAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				878F47FF29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02Tests.swift */,
-				878F48292934284B00269F84 /* MockArticleFetcher.swift */,
+				878F48292934284B00269F84 /* MockArticlesAPIClient.swift */,
 			);
 			path = "MiniApp113-SwiftUI-stubmock02Tests";
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 				878F47F129341AE800269F84 /* ArticleView.swift in Sources */,
 				878F482229341E9600269F84 /* ArticleListAPIClient.swift in Sources */,
 				878F482629341FEF00269F84 /* ArticleViewModel.swift in Sources */,
-				878F482A2934284B00269F84 /* MockArticleFetcher.swift in Sources */,
+				878F482A2934284B00269F84 /* MockArticlesAPIClient.swift in Sources */,
 				878F47EF29341AE800269F84 /* MiniApp113_SwiftUI_stubmock02App.swift in Sources */,
 				878F481C29341CE000269F84 /* APIError.swift in Sources */,
 			);
@@ -322,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878F482B2934284B00269F84 /* MockArticleFetcher.swift in Sources */,
+				878F482B2934284B00269F84 /* MockArticlesAPIClient.swift in Sources */,
 				878F482D29342F6300269F84 /* ArticleView.swift in Sources */,
 				878F481F29341DE300269F84 /* ArticleListAPIClientProtocol.swift in Sources */,
 				878F482729341FEF00269F84 /* ArticleViewModel.swift in Sources */,
@@ -338,7 +338,7 @@
 			files = (
 				878F482029341DE300269F84 /* ArticleListAPIClientProtocol.swift in Sources */,
 				878F480A29341AE900269F84 /* MiniApp113_SwiftUI_stubmock02UITests.swift in Sources */,
-				878F482C2934284B00269F84 /* MockArticleFetcher.swift in Sources */,
+				878F482C2934284B00269F84 /* MockArticlesAPIClient.swift in Sources */,
 				878F482429341E9600269F84 /* ArticleListAPIClient.swift in Sources */,
 				878F482829341FEF00269F84 /* ArticleViewModel.swift in Sources */,
 				878F483029342F7100269F84 /* APIError.swift in Sources */,
