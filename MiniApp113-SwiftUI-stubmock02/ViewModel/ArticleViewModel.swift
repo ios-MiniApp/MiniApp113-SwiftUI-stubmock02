@@ -9,9 +9,17 @@ import Foundation
 
 class ArticleViewModel: ObservableObject {
     @Published var articles: [Article] = [Article]()
-    private let articleListAPIClient = ArticleListAPIClient()
+    var apiError: APIError?
+    private let articleListAPIClient: ArticleListAPIClientProtocol!
+
+    // テスト用のイニシャライザ
+    init(fetchArticlesAPIClient: ArticleListAPIClientProtocol) {
+        articleListAPIClient = fetchArticlesAPIClient
+        loadArticles()
+    }
 
     init() {
+        articleListAPIClient = ArticleListAPIClient()
         loadArticles()
     }
 
@@ -21,6 +29,7 @@ class ArticleViewModel: ObservableObject {
             case .success(let articleList):
                 self?.articles = articleList
             case .failure(let error):
+                self?.apiError = error
                 print(error)
             }
         })
